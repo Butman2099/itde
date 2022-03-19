@@ -3,11 +3,13 @@
   <script src="aframe/aframe.min.js"></script> 
   <a-scene> 
     <a-sky color="#00FFFF"></a-sky> 
-    <a-torus position="-2 1 -5" color="#0000FF" radius="1.2"></a-torus>
+    <a-torus position="-2 1 -5" color="#0000FF" radius="1.2" animation="property: components.material.material.color; type: color; from: #0000FF; to: #800000; loop: true; dur: 5000"></a-torus>
     <a-plane src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/illustration/758px-Canestra_di_frutta_(Caravaggio).jpg" width="14" height="7" rotation="-55 0 0" position="-2 -2 -5"></a-plane>
     <a-cylinder color="#FF0000" height="2.370" radius="0.05" position="-1.174 -0.821 -5"></a-cylinder>
     <a-cylinder color="#FF0000" height="2.370" radius="0.05" position="-2.526 -0.767 -5"></a-cylinder>
-    <a-torus-knot color="#FFFF00" radius="1.2" position="-3 1 -5"></a-torus-knot>
+    <a-torus-knot color="#FFFF00" radius="1.2" position="-3 1 -5" 
+        animation="property: components.material.material.color; type: color; from: #FFFF00; to: #DAA520; loop: true; dur: 5000"
+        animation__2="property: rotation; to: 0 0 360; loop: true; dur: 5000"></a-torus-knot>></a-torus-knot>
     <a-plane width="9.880" height="2" position="4.025 1.494 -9"></a-plane>
     <a-text value="Week 2 by A.O. Bielinskyi" color="#000000" width="15.8" position="0.084 1.428 -7.909"></a-text>
   </a-scene> 
