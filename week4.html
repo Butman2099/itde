@@ -69,17 +69,29 @@
   </head>
   <body>
     <a-scene>
-        <a-sky color="black"></a-sky>
+        <a-assets>
+            <img id="sun" src="assets/sun.png">
+            <img id="mercury" src="assets/mercury.png"> 
+            <img id="venus" src="assets/venus.png"> 
+            <img id="earth" src="assets/earthwClouds.png"> 
+            <img id="mars" src="assets/mars.png"> 
+            <img id="jupiter" src="assets/jupiter.png"> 
+            <img id="saturn" src="assets/saturn.png"> 
+            <img id="uranus" src="assets/uranus.png"> 
+            <img id="neptune" src="assets/neptune.png"> 
+        </a-assets>
+
+        <a-sky src="https://stemkoski.github.io/A-Frame-Examples/images/stars.jpg" radius="10000"></a-sky>
         <a-camera position="0 0 300" cursor-visible="true" cursor-scale="2" cursor-color="#0095DD" cursor-opacity="0.5"></a-camera>
-        <a-entity geometry="primitive: sphere; radius: 20.510" material="color: yellow" planet="dist: 0; mass: 1.9885e30; name: Sun"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 2.4397" material="color: #AA5588" planet="dist: 57.909227e9; mass: 3.33022e23; T: 87.969; name: Mercury"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 6.0518" material="color: white" planet="dist: 108.208930e9; mass: 4.8675e24; T: 224.701; name: Venus"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 6.371" material="color: blue" planet="dist: 149.598261e9; mass: 5.9726e24; T: 365.25; name: Earth"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 3.3895" material="color: red" planet="dist: 2.2794382e11; mass: 6.4171e23; T: 686.98; name: Mars"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 69.911" material="color: brown" planet="dist: 7.785472e11; mass: 1.8982e27; T: 398.88; name: Jupiter"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 58.232" material="color: yellow" planet="dist: 14.429394069e11; mass: 5.6846e26; T: 10759.22; name: Saturn"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 25.362" material="color: red" planet="dist: 28.76679082e11; mass: 8.6810e25; T: 30688.5; name: Uranus"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 24.622" material="color: red" planet="dist: 45.03443661e11; mass: 10.02413e25; T: 60195.0; name: Neptune"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 20.510" material="src: #sun" planet="dist: 0; mass: 1.9885e30; name: Sun"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 2.4397" material="color: #mercury" planet="dist: 57.909227e9; mass: 3.33022e23; T: 87.969; name: Mercury"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 6.0518" material="color: #venus" planet="dist: 108.208930e9; mass: 4.8675e24; T: 224.701; name: Venus"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 6.371" material="color: #earth" planet="dist: 149.598261e9; mass: 5.9726e24; T: 365.25; name: Earth"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 3.3895" material="color: #mars" planet="dist: 2.2794382e11; mass: 6.4171e23; T: 686.98; name: Mars"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 69.911" material="color: #jupiter" planet="dist: 7.785472e11; mass: 1.8982e27; T: 398.88; name: Jupiter"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 58.232" material="color: #saturn" planet="dist: 14.429394069e11; mass: 5.6846e26; T: 10759.22; name: Saturn"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 25.362" material="color: #uranus" planet="dist: 28.76679082e11; mass: 8.6810e25; T: 30688.5; name: Uranus"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 24.622" material="color: #neptune" planet="dist: 45.03443661e11; mass: 10.02413e25; T: 60195.0; name: Neptune"></a-entity>
         <a-entity main></a-entity>
     </a-scene>
   </body>
