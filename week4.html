@@ -69,29 +69,17 @@
   </head>
   <body>
     <a-scene>
-        <a-assets>
-            <img id="sun" src="https://www.solarsystemscope.com/textures/download/2k_sun.jpg">
-            <img id="mercury" src="https://www.solarsystemscope.com/textures/download/2k_mercury.jpg"> 
-            <img id="venus" src="https://www.solarsystemscope.com/textures/download/2k_venus_surface.jpg"> 
-            <img id="earth" src="https://www.solarsystemscope.com/textures/download/2k_saturn.jpg"> 
-            <img id="mars" src="https://www.solarsystemscope.com/textures/download/2k_mars.jpg"> 
-            <img id="jupiter" src="https://www.solarsystemscope.com/textures/download/2k_jupiter.jpg"> 
-            <img id="saturn" src="https://www.solarsystemscope.com/textures/download/2k_saturn.jpg"> 
-            <img id="uranus" src="https://www.solarsystemscope.com/textures/download/2k_uranus.jpg"> 
-            <img id="neptune" src="https://www.solarsystemscope.com/textures/download/2k_neptune.jpg"> 
-        </a-assets>
-
-        <a-sky src="https://stemkoski.github.io/A-Frame-Examples/images/stars.jpg" radius="10000"></a-sky>
-        <a-camera position="0 0 500" cursor-visible="true" cursor-scale="2" cursor-color="#0095DD" cursor-opacity="1.5"></a-camera>
-        <a-entity geometry="primitive: sphere; radius: 20.510" material="src: #sun" planet="dist: 0; mass: 1.9885e30; name: Sun"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 2.4397" material="src: #mercury" planet="dist: 57.909227e9; mass: 3.33022e23; T: 87.969; name: Mercury"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 6.0518" material="src: #venus" planet="dist: 108.208930e9; mass: 4.8675e24; T: 224.701; name: Venus"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 6.371" material="src: #earth" planet="dist: 149.598261e9; mass: 5.9726e24; T: 365.25; name: Earth"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 3.3895" material="src: #mars" planet="dist: 227.94382e9; mass: 6.4171e23; T: 686.98; name: Mars"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 69.911" material="src: #jupiter" planet="dist: 778.5472e9; mass: 1.8982e27; T: 398.88; name: Jupiter"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 58.232" material="src: #saturn" planet="dist: 1.429394069e12; mass: 5.6846e26; T: 10759.22; name: Saturn"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 25.362" material="src: #uranus" planet="dist: 2.876679082e12; mass: 8.6810e25; T: 30688.5; name: Uranus"></a-entity>
-        <a-entity geometry="primitive: sphere; radius: 24.622" material="src: #neptune" planet="dist: 4.503443661e12; mass: 10.02413e25; T: 60195.0; name: Neptune"></a-entity>
+        <a-camera position="0 0 500" cursor-visible="true" cursor-scale="2" cursor-color="#0095DD" cursor-opacity="1.5" wasd-controls="acceleration: 5000"></a-camera>
+        <a-sky src="https://stemkoski.github.io/A-Frame-Examples/images/stars.jpg" radius="4700"></a-sky>
+        <a-entity geometry="primitive: sphere; radius: 20.510" material="src: url(https://ak.picdn.net/shutterstock/videos/366016/thumb/1.jpg)" planet="dist: 0; mass: 1.9885e30; name: Sun"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 2.4397" material="src: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e0763947-6f42-4d09-944f-c2d6f41c415b/dcaig77-18800e1e-24aa-43e5-9dd0-3dff9bcf8d0c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UwNzYzOTQ3LTZmNDItNGQwOS05NDRmLWMyZDZmNDFjNDE1YlwvZGNhaWc3Ny0xODgwMGUxZS0yNGFhLTQzZTUtOWRkMC0zZGZmOWJjZjhkMGMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.TLHMNUPdW5unEpvHhX2wn8iRLpHN15hcMvFLWtmXWyE)" planet="dist: 57.909227e9; mass: 3.33022e23; T: 87.969; name: Mercury"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 6.0518" material="src: url(https://upload.wikimedia.org/wikipedia/commons/7/72/Venus_map_NASA_JPL_Magellan-Venera-Pioneer.jpg)" planet="dist: 108.208930e9; mass: 4.8675e24; T: 224.701; name: Venus"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 6.371" material="src: url(https://previews.123rf.com/images/antonshahrai/antonshahrai2007/antonshahrai200700006/151534030-world-texture-satellite-image-of-the-earth-high-resolution-texture-of-the-planet-with-relief-shading.jpg)" planet="dist: 149.598261e9; mass: 5.9726e24; T: 365.25; name: Earth"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 3.3895" material="src: url(https://media.istockphoto.com/photos/alien-planet-with-craters-4-picture-id488156684?k=20&m=488156684&s=612x612&w=0&h=8zrGm0ZWUUcFvsSzR2AhflXe1IM6sxXDabrd4yeY8Nc=)" planet="dist: 227.94382e9; mass: 6.4171e23; T: 686.98; name: Mars"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 69.911" material="src: url(https://upload.wikimedia.org/wikipedia/commons/5/5e/Solarsystemscope_texture_8k_jupiter.jpg)" planet="dist: 778.5472e9; mass: 1.8982e27; T: 4332.589; name: Jupiter"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 58.232" material="src: url(https://upload.wikimedia.org/wikipedia/commons/1/1e/Solarsystemscope_texture_8k_saturn.jpg)" planet="dist: 1.429394069e12; mass: 5.6846e26; T: 10759.22; name: Saturn"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 25.362" material="src: url(https://upload.wikimedia.org/wikipedia/commons/9/95/Solarsystemscope_texture_2k_uranus.jpg)" planet="dist: 2.876679082e12; mass: 8.6810e25; T: 30688.5; name: Uranus"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 24.622" material="src: url(https://upload.wikimedia.org/wikipedia/commons/1/1e/Solarsystemscope_texture_2k_neptune.jpg)" planet="dist: 4.503443661e12; mass: 10.02413e25; T: 60195.0; name: Neptune"></a-entity>
         <a-entity main></a-entity>
     </a-scene>
   </body>
